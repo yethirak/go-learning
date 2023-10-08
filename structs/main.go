@@ -40,6 +40,6 @@ func (p person) print() {
 	fmt.Printf("%+v\n", p)
 }
 
-func (p person) updateName(newFirstName string) {
+func (p *person) updateName(newFirstName string) {
 	p.firstName = newFirstName
 }
